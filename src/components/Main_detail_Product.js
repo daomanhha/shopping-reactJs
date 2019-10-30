@@ -3,6 +3,18 @@ import MainDetailProductComponent from './Main_detail_product_Component';
 import {connect} from 'react-redux';
 
 class MainDetailProduct extends Component{
+    componentDidMount () {
+        let script = document.createElement("script");
+        script.src = "./js/myJs3.js";
+        script.async = true;
+        document.body.appendChild(script);
+    }
+    componentWillUnmount(){
+        let script = document.querySelector("script[src='./js/myJs3.js']")
+        if(script){
+            script.remove();
+        }
+    }
     render(){
         let {match,Products} = this.props;
         return(

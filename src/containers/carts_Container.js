@@ -4,6 +4,18 @@ import MainCart from './../components/Main_cart';
 import MainCartProduct from './../components/Main_cart_products';
 import * as actions from './../actions/index';
 class CartContainer extends Component{
+    componentDidMount () {
+        let script = document.createElement("script");
+        script.src = "./js/myJs3.js";
+        script.async = true;
+        document.body.appendChild(script);
+    }
+    componentWillUnmount(){
+        let script = document.querySelector("script[src='./js/myJs3.js']")
+        if(script){
+            script.remove();
+        }
+    }
     render(){
         return(
             <MainCart>
