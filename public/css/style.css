@@ -100,6 +100,10 @@ main{
 #carouselExampleControls{
 	top: 30px;
 }
+#carouselExampleControls .carousel-item > img{
+	height:450px;
+	object-fit: cover;
+}
 /*slider*/
 .fixed-controls-top{
 	position: absolute;
@@ -320,5 +324,8 @@ footer.page-footer{
 	}
 	.fixed-showCategories-button{
 		display: none;
+	}
+	#carouselExampleControls .carousel-item > img{
+		height:auto;
 	}
 }

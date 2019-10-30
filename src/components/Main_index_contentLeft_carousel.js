@@ -5,15 +5,15 @@ export default class Carousel extends Component{
             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                     <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="d-block w-100 " src="https://dummyimage.com/1320x450/000/fff"
+                        <img className="d-block w-100 " src="./img/slider1.jpg"
                         alt="First slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" src="https://dummyimage.com/1320x450/000/fff"
+                        <img className="d-block w-100" src="./img/slider2.png"
                         alt="Second slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" src="https://dummyimage.com/1320x450/000/fff"
+                        <img className="d-block w-100" src="./img/slider3.png"
                         alt="Third slide"/>
                     </div>
                     </div>
