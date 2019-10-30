@@ -1,4 +1,3 @@
-
     var loader = document.querySelector('.lds-spinner');
     var App = document.querySelector('#App');
 

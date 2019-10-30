@@ -1,7 +1,5 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-
-
 class ShoppingCartDetail extends Component {
     render(){
     let total = countCart(this.props.carts);

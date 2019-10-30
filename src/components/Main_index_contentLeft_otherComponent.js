@@ -23,24 +23,10 @@ export default class OtherComponent extends Component{
                         </div> 
                         <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <a href="#">
-                            <img src="https://dummyimage.com/320x250/000/fff" alt=""/>
+                            <img src="./img/shoe.jpg" alt=""/>
                             </a>
                         </div> 
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt-3">
-                            <a href="#">
-                            <img src="https://dummyimage.com/320x250/000/fff" alt=""/>
-                            </a>
-                        </div>  
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt-3">
-                            <a href="#">
-                            <img src="https://dummyimage.com/320x250/000/fff" alt=""/>
-                            </a>
-                        </div>  
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 mt-3">
-                            <a href="#">
-                            <img src="https://dummyimage.com/320x250/000/fff" alt=""/>
-                            </a>
-                        </div> 
+                        
                     </div>    
                 </div>
             </section>

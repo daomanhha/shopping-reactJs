@@ -10,8 +10,8 @@ export default class IphoneProduct extends Component{
                         <div className="product-grid2">
                         <div className="product-image2">
                             <a href="#">
-                                <img className="pic-1" src="./img/IP601.jpg"/>
-                                <img className="pic-2" src="./img/IP602.jpg"/>
+                                <img className="pic-1" src={product.img1}/>
+                                <img className="pic-2" src={product.img2}/>
                             </a>
                             <ul className="social">
                                 <li><a href="#" data-tip="Quick View"><i className="fa fa-eye"></i></a></li>

@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import MainIndex from './components/Main_index';
 import CartContainer from './containers/carts_Container';
+import MainDetailProduct from './components/Main_detail_Product';
 
 class App extends Component {
   componentDidMount () {
@@ -18,13 +19,13 @@ class App extends Component {
     script.src = "./js/myJs1.js";
     script.async = true;
     document.body.appendChild(script);
-}
-componentWillUnmount(){
-    let script = document.querySelector("script[src='./js/myJs1.js']")
-    if(script){
-        script.remove();
-    }
-}
+  }
+  componentWillUnmount(){
+      let script = document.querySelector("script[src='./js/myJs1.js']")
+      if(script){
+          script.remove();
+      }
+  }
   render(){
   return (
   <Router >
@@ -48,6 +49,7 @@ componentWillUnmount(){
         <Switch>
           <Route path="/" exact component={()=> <MainIndex/>}/>
           <Route path="/cart" component={()=> <CartContainer/>}/>
+          <Route path="/product/:id" exact component={({match})=> <MainDetailProduct match={match} />}/>   
         </Switch>
         <Footer />
       </div>
