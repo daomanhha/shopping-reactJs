@@ -36,7 +36,9 @@ img {
 .detail-products .details {
     text-align: initial;
 }
-
+.detail-products .tab-pane > img{
+  object-fit: contain;
+}
 .detail-products .preview {
   display: -webkit-box;
   display: -webkit-flex;

@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Link} from "react-router-dom";
 
 export default class IphoneProduct extends Component{
     render(){
@@ -9,10 +10,10 @@ export default class IphoneProduct extends Component{
                     <div className="view overlay hm-white-slight z-depth-1">
                         <div className="product-grid2">
                         <div className="product-image2">
-                            <a href="#">
+                            <Link to={`./product/${product.id}`}>
                                 <img className="pic-1" src={product.img1}/>
                                 <img className="pic-2" src={product.img2}/>
-                            </a>
+                            </Link>
                             <ul className="social">
                                 <li><a href="#" data-tip="Quick View"><i className="fa fa-eye"></i></a></li>
                                 <li><a href="#" data-tip="Add to Wishlist"><i className="fa fa-shopping-bag"></i></a></li>
