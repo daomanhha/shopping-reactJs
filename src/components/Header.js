@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
-import {
-    Link
-  } from "react-router-dom";
+import { Link} from "react-router-dom";
+import {connect} from 'react-redux';
 
-export default class Header extends Component{
+class Header extends Component{
     render(){
+        let {carts} = this.props;
         return(
             <header>
                 <nav id="nav-bar" className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary scrolling-navbar">
@@ -27,10 +27,22 @@ export default class Header extends Component{
                                 <i className="fas fa-cart-arrow-down"></i>
                             </Link>
                         </button>
-                        <span className="counter">22</span>
+                        <span className="counter">{carts.length}</span>
                     </div>
                 </nav>
             </header>
         )
     }
 }
+function mapStateToProps(state){
+    return{
+        carts: state.Carts,
+    }
+}
+function mapDispatchToProps(dispatch, props){
+    return{
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

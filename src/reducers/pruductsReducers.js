@@ -1,4 +1,4 @@
-
+import * as Types from './../constants/index';
 const initialState = [
     {
         id:0,
@@ -12,9 +12,9 @@ const initialState = [
         description:'Sản phẩm do Apple sản xuất'
     },
     {
-        id:0,
-        name:'Iphone 6 plus',
-        price: 15,
+        id:1,
+        name:'Iphone 7 plus',
+        price: 20,
         img1:'',
         img2:'',
         img3:'',
@@ -23,9 +23,9 @@ const initialState = [
         description:'Sản phẩm do Apple sản xuất'
     },
     {
-        id:0,
-        name:'Iphone 6 plus',
-        price: 15,
+        id:2,
+        name:'Iphone 8 ',
+        price: 25,
         img1:'',
         img2:'',
         img3:'',
@@ -34,9 +34,9 @@ const initialState = [
         description:'Sản phẩm do Apple sản xuất'
     },
     {
-        id:0,
-        name:'Iphone 6 plus',
-        price: 15,
+        id:3,
+        name:'Iphone 9',
+        price: 30,
         img1:'',
         img2:'',
         img3:'',

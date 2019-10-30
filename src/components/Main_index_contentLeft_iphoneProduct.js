@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 
 export default class IphoneProduct extends Component{
     render(){
+        let {product} = this.props;
         return (
             <div className="col-lg-3 col-md-6 mb-r">
                 <div className="card text-center card-cascade narrower">
@@ -26,7 +27,7 @@ export default class IphoneProduct extends Component{
                     <div className="card-body">
                         <h4 className="card-title">
                             <strong>
-                                <a>Iphone 6 Plus</a>
+                                <a>{product.name}</a>
                             </strong>
                         </h4>
                         <ul className="rating">
@@ -47,10 +48,10 @@ export default class IphoneProduct extends Component{
                             </li>
                         </ul>
                         <p className="card-text">
-                            Sản phẩm do apply sản xuất
+                            {product.description}
                         </p>
                         <div className="card-footer">
-                            <span className="left">15$</span>
+                            <span className="left">{product.price}$</span>
                             <span className="right">
                                 <a className="btn-floating blue-gradient" href="#body" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
                                     <i className="fa fa-shopping-cart"></i>

@@ -11,5 +11,7 @@ App
             other-component
         modal-button 
     main_cart
+        main_cart_product
+        shopping_cart_detail
     main_detail_product        
     footer

@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +10,7 @@ import {
   Link
 } from "react-router-dom";
 import MainIndex from './components/Main_index';
-import MainCart from './components/Main_cart';
+import CartContainer from './containers/carts_Container';
 
 class App extends Component {
   componentDidMount () {
@@ -46,7 +47,7 @@ componentWillUnmount(){
         <Header />
         <Switch>
           <Route path="/" exact component={()=> <MainIndex/>}/>
-          <Route path="/cart" component={()=><MainCart/>}/>
+          <Route path="/cart" component={()=> <CartContainer/>}/>
         </Switch>
         <Footer />
       </div>
