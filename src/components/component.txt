@@ -1,0 +1,15 @@
+App 
+    header
+
+    main_index
+        categories
+        content-left
+            carousel
+            slider-card 
+            ip-component
+                ip-product
+            other-component
+        modal-button 
+    main_cart
+    main_detail_product        
+    footer
