@@ -48,7 +48,6 @@ export default (state = initialState , action)=>{
             return stateAfterMinus;
         case Types.DELETE_CART:
             let stateAfterDelete = [...state];
-            let indexDelete = findIndex(stateAfterDelete, action.cart.id);
             if(window.confirm('bạn có muốn xóa không')){
                 let indexDelete = findIndex(stateAfterDelete, action.cart.id);
                 if(indexDelete !== -1){

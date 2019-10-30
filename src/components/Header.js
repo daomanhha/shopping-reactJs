@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import { Link} from "react-router-dom";
+import HeaderTopBar from './Header_TopBar';
 import {connect} from 'react-redux';
 
 class Header extends Component{
@@ -7,6 +8,7 @@ class Header extends Component{
         let {carts} = this.props;
         return(
             <header>
+                <HeaderTopBar />
                 <nav id="nav-bar" className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary scrolling-navbar">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
