@@ -284,6 +284,11 @@ div[class^="col-"] {
     background-color: #0cd4d2;
     color: #ffffff;
 }
+@media screen and (max-width: 768px){
+    .topBar{
+        display: none;
+    }
+}
 
 
 
