@@ -25,3 +25,11 @@ export function deleteCart(cart){
         cart
     }
 }
+
+export function search(isSearchBol , keySearch){
+    return{
+        type: types.SEARCH,
+        isSearchBol,
+        keySearch
+    }
+}

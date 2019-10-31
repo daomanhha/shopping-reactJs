@@ -3,16 +3,29 @@ import Carousel from './Main_index_contentLeft_carousel';
 import SilderCard from './Main_index_contentLeft_sliderCard';
 import OtherComponent from './Main_index_contentLeft_otherComponent';
 import IphonesContainer from './../containers/Iphones_Container';
-export default class ContentLeft extends Component{
+import {connect} from 'react-redux';
+class ContentLeft extends Component{
     render(){
+        let{Search} = this.props;
         return (
             <section className="content-left">
-                <Carousel />
-                <SilderCard />
+                {Search.isSearch || <Carousel />}
+                {Search.isSearch || <SilderCard />}
                 <IphonesContainer />
-                <OtherComponent />
+                {Search.isSearch || <OtherComponent />}
             </section>
                 
         )
     }
 }
+function mapStateToProps(state){
+    return{
+        Search: state.isSearch
+    }
+}
+function mapDispatchToProps(dispatch, props){
+    return{
+        
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ContentLeft);

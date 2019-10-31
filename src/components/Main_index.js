@@ -3,7 +3,8 @@ import Categories from './Main_index_categories';
 import ContentLeft from './Main_index_contentLeft';
 import ModelButton from './Main_index_modalButton';
 
-export default class MainIndex extends Component{
+
+class MainIndex extends Component{
     componentDidMount () {
         let script = document.createElement("script");
         script.src = "./js/myJs2.js";
@@ -26,3 +27,6 @@ export default class MainIndex extends Component{
         )
     }
 }
+
+
+export default MainIndex;

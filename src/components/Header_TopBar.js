@@ -10,7 +10,7 @@ class HeaderTopBar extends Component{
             <nav className="topBar">
                 <div className="container">
                     <ul className="list-inline pull-left hidden-sm hidden-xs">
-                    <li><span class="text-primary">Have a question? </span> Call +120 558 7885</li>
+                    <li><span className="text-primary">Have a question? </span> Call +120 558 7885</li>
                 </ul>
                     <ul className="topBarNav pull-right">
                         <li className="dropdown">
@@ -26,24 +26,24 @@ class HeaderTopBar extends Component{
                         </ul>
                         </li>
                         <li className="dropdown">
-                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-french.jpg" class="mr-5" alt=""/> <span class="hidden-xs"> Vienamese <i class="fa fa-angle-down ml-5"></i></span> </a>
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-french.jpg" className="mr-5" alt=""/> <span className="hidden-xs"> Vienamese <i className="fa fa-angle-down ml-5"></i></span> </a>
                         <ul className="dropdown-menu w-100" role="menu">
                             <li>
-                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-english.jpg" class="mr-5" alt=""/>English</a>
+                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-english.jpg" className="mr-5" alt=""/>English</a>
                             </li>
                             <li className="">
-                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-french.jpg" class="mr-5" alt=""/>French</a>
+                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-french.jpg" className="mr-5" alt=""/>French</a>
                             </li>
                             <li>
-                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-german.jpg" class="mr-5" alt=""/>German</a>
+                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-german.jpg" className="mr-5" alt=""/>German</a>
                             </li>
                             <li>
-                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-spain.jpg" class="mr-5" alt=""/>Spain</a>
+                            <a href="#"><img src="http://diamondcreative.net/plus-v1.2/img/flags/flag-spain.jpg" className="mr-5" alt=""/>Spain</a>
                             </li>
                         </ul>
                         </li>
                         <li className="dropdown">
-                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5"></i><span class="hidden-xs">Tài Khoản<i class="fa fa-angle-down ml-5"></i></span> </a>
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i className="fa fa-user mr-5"></i><span className="hidden-xs">Tài Khoản<i className="fa fa-angle-down ml-5"></i></span> </a>
                         <ul className="dropdown-menu w-150" role="menu">
                             <li><a href="login.html">Đăng nhập</a>
                             </li>
@@ -94,7 +94,7 @@ class HeaderTopBar extends Component{
 
 function renderCartComponent(carts, deleteCart){
     return carts.map((ele,index)=>{
-        return <CartBarComponent deleteCart={deleteCart} cart={ele.product} quantity={ele.quantity} />
+        return <CartBarComponent key={index} deleteCart={deleteCart} cart={ele.product} quantity={ele.quantity} />
     })
 }
 function mapStateToProps(state){

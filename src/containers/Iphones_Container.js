@@ -7,20 +7,30 @@ class IphonesContainer extends Component{
     render(){
         return(
             <IphonesComponent>
-                {renderProduct(this.props.Products, this.props.addToCart)}
+                {renderProduct(this.props.search, this.props.Products, this.props.addToCart)}
             </IphonesComponent>
         );
     }
 }
-function renderProduct(products, addToCart){
-    return products.map((ele, index)=>{
-        return <IphoneProduct addToCarts={addToCart} product={ele} key={index}/>
-    });
+function renderProduct(search, products, addToCart){
+    if(search.isSearch){
+        return products.filter((ele,index)=>{
+            return ele.name.toLowerCase().indexOf(search.searchKey.toLowerCase())!==-1;
+        }).map((ele, index)=>{
+            return <IphoneProduct addToCarts={addToCart} product={ele} key={index}/>
+        });
+    }
+    else{
+        return products.map((ele, index)=>{
+            return <IphoneProduct addToCarts={addToCart} product={ele} key={index}/>
+        });
+    }
 }
 
 function mapStateToProps(state){
     return{
-        Products: state.Products
+        Products: state.Products,
+        search: state.isSearch
     }
 }
 
