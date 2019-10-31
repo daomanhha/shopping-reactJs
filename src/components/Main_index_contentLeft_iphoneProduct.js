@@ -19,7 +19,7 @@ export default class IphoneProduct extends Component{
                                 <li><a href="#" data-tip="Add to Wishlist"><i className="fa fa-shopping-bag"></i></a></li>
                                 <li><a href="#" data-tip="Add to Cart"><i className="fa fa-shopping-cart"></i></a></li>
                             </ul>
-                            <a className="add-to-cart" href="">Add to cart</a>
+                            <a className="add-to-cart" href="javascript:void:0" onClick={()=>addToCarts(product)}>Add to cart</a>
                             <span className="product-new-label">Sale</span>
                             <span className="product-discount-label">20%</span>
                         </div>
