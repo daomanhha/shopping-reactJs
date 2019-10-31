@@ -33,3 +33,10 @@ export function search(isSearchBol , keySearch){
         keySearch
     }
 }
+
+export function discountOpen(discountCode){
+    return{
+        type:types.DISCOUNT_OPEN,
+        discountCode
+    }
+}

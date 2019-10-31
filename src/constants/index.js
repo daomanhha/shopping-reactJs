@@ -4,3 +4,5 @@ export const MINUS_CART = 'MINUS_CART';
 export const DELETE_CART = 'DELETE_CART';
 
 export const SEARCH = 'SEARCH';
+
+export const DISCOUNT_OPEN = 'DISCOUNT_OPEN';

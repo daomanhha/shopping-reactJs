@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import MainCartProducts from './Main_cart_products';
 import ShoppingCartDetail from './Main_cart_shoppingCartDetail';
+import MainCartDiscount from './Main_Cart_Discount';
 
 
 class MainCart extends Component {
@@ -41,18 +41,8 @@ class MainCart extends Component {
                     </div>
 
                     <div className="row py-5 p-4 bg-white rounded shadow-sm">
-                    <div className="col-lg-6">
-                        <div className="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Phiếu giảm giá</div>
-                        <div className="p-4">
-                        <p className="font-italic mb-4">Nếu bạn có phiếu giảm giá xin hãy điền vào đây</p>
-                        <div className="input-group mb-4 border rounded-pill p-2">
-                            <input type="text" placeholder="Mã Giảm Giá" aria-describedby="button-addon3" className="form-control border-0"/>
-                            <div className="input-group-append border-0">
-                            <button id="button-addon3" type="button" className="btn btn-dark px-4 rounded-pill"><i className="fa fa-gift mr-2"></i>Apply</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                    
+                    <MainCartDiscount />
                     <ShoppingCartDetail />
                     </div>
                 </div>  
